@@ -1,120 +1,139 @@
+/*стили... тут много правок*/
 body {
     position: relative;
+    /* стоогие выоста и ширина достаточно ужасно, у тебя боди это весь экран, по html я тебе написл, что у тебя контейнер с картинкой будут
+    уже с другим классом*/
+    /*тут лучше подошел момент с централизизовкой дочерненей компоненты попрбуй
+    погуглить как с ролдтеля выравнить дочерний компонент, хотя можно это сделать в дочерненм*/
     width: 1440px;
     height: 1024px;
     background: #1A1A1A;
-    }
+}
 
+/*для контейнера с изображением и формой*/
+.container {
+    width: 100%;
+    height: 100%;
+    /*маржин вещь что задает отступы для дочеренй компоеннты, тут я сделал что , по горизонтале у меня теперь 60пх а
+    auto подстравивает отстпупы автоматически смотря на высоту родителя тем самым сверху и снизу будут одинаковые отступы */
+    margin: 60px auto;
+}
+
+/* про лефт и райт и абсолют забудь)*/
 .enter {
+    /*    не испуользуй такую вещь */
     position: absolute;
-width: 51px;
-height: 21px;
-left: 994px;
-top: 590px;
+    width: 51px;
+    height: 21px;
+    /*    не испуользуй такую вещь */
+    left: 994px;
+    /*    не испуользуй такую вещь можно*/
+    top: 590px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-color: #161313;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #161313;
 }
 
 .greenblock {
     position: absolute;
-width: 360px;
-height: 67px;
-left: 840px;
-top: 567px;
+    width: 360px;
+    height: 67px;
+    left: 840px;
+    top: 567px;
 
-background: #C6FF7E;
-border-radius: 10px;
+    background: #C6FF7E;
+    border-radius: 10px;
 }
 
 .bodypink {
     position: absolute;
-width: 1236px;
-height: 800px;
-left: 102px;
-top: 91px;
-background: rgba(207, 163, 178, 0.9);
-border-radius: 10px;
+    width: 1236px;
+    height: 800px;
+    left: 102px;
+    top: 91px;
+    background: rgba(207, 163, 178, 0.9);
+    border-radius: 10px;
 }
 
 .pics {
     position: absolute;
-width: 618px;
-height: 800px;
-left: 102px;
-top: 91px;
-background: url(pics.jpg);
-border-radius: 10px 0px 0px 10px;
+    width: 618px;
+    height: 800px;
+    left: 102px;
+    top: 91px;
+    /* погугли как работать с изображением!*/
+    background: url(pics.jpg);
+    border-radius: 10px 0px 0px 10px;
 }
 
 .password {
     position: absolute;
-width: 64px;
-height: 21px;
-left: 858px;
-top: 481px;
+    width: 64px;
+    height: 21px;
+    left: 858px;
+    top: 481px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
 }
 
 .passwordblock {
     position: absolute;
-width: 360px;
-height: 67px;
-left: 840px;
-top: 458px;
+    width: 360px;
+    height: 67px;
+    left: 840px;
+    top: 458px;
 
-background: #FFFFFF;
-border-radius: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
 }
 
 .mail {
     position: absolute;
-width: 360px;
-height: 67px;
-left: 840px;
-top: 355px;
+    width: 360px;
+    height: 67px;
+    left: 840px;
+    top: 355px;
 
-background: #FFFFFF;
-border-radius: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
 }
 
 .maiil {
     position: absolute;
-width: 52px;
-height: 21px;
-left: 858px;
-top: 378px;
+    width: 52px;
+    height: 21px;
+    left: 858px;
+    top: 378px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 
-color: #000000;
+    color: #000000;
 }
 
 .forgot {
     position: absolute;
-width: 109px;
-height: 18px;
-left: 965px;
-top: 656px;
+    width: 109px;
+    height: 18px;
+    left: 965px;
+    top: 656px;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
-color: #0928CB;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0928CB;
 }

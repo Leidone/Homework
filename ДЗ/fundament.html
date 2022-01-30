@@ -1,17 +1,53 @@
-<html>
-    <head>
-        <link rel = "stylesheet" type = "text/css" href = "fundament.css">
-        <meta charset="UTF-8">
-        <body class="body">
-            <div class="bodypink"></div>
-            <div class="greenblock"></div>
-            <div class="enter">Войти</div>
-            <div class="passwordblock"></div>
-            <div class="password">Пароль</div>
-            <div class="mail"></div>
-            <div class="maiil">Почта</div>
-            <div class="forgot">Забыли пароль?</div>
-        </body> 
-        <img class="pics" src="pics.jpg">
-    </head>
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <link rel = "stylesheet" type = "text/css" href = "fundament.css">-->
+<!--        <meta charset="UTF-8">-->
+<!--        <title></title>-->
+<!--    </head>-->
+<!--    <body class="body">-->
+<!--            <div class="bodypink"></div>-->
+<!--            <div class="greenblock"></div>-->
+<!--            <div class="enter">Войти</div>-->
+<!--            <div class="passwordblock"></div>-->
+<!--            <div class="password">Пароль</div>-->
+<!--            <div class="mail"></div>-->
+<!--            <div class="maiil">Почта</div>-->
+<!--            <div class="forgot">Забыли пароль?</div>-->
+<!--        </body> -->
+<!--        <img class="pics" src="pics.jpg">-->
+
+<!--</html>-->
+<!--1)начнем с того что первоначальная оболочка должна выглядить атким образом-->
+<!--2)Вторая поправка забыл атрибут lang-->
+<!--3)Забыл про такую вещь как тег title эта штука нужна для отображения в вкладке в самом вверху-->
+<!--4)Думаю ты еще не знаком с понятие вложенности так что сейчас в примере покажу как и что должно быть-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--контейнер представляет собой сущность что в черном экране-->
+<div class="container">
+    <!--    далее у нас идет сущность в левой стороне, изображение, а а так же правая это форма то есть тебе надо научиться визуально разделять дизайн на части-->
+    <div class="container__image">
+        <img src="" alt="та самая картинка">
+    </div>
+    <div class="container__form">
+        <!--    тут у нас форма, так же у нас тут два блока которые можно реализовать под одину компоненту-->
+        <!--    плюсы того что ты разделяешь на блоки в читабельности, а также переиспользованиие-->
+        <!--    таким образом созда один инпут и добавив к нему стили я смогу его переиспользовать-->
+        <!--        есть специальный тег для инпута!-->
+        <div class="container__form-field">
+            <span>F</span>
+        </div>
+    </div>
+</div>
+</body>
 </html>
